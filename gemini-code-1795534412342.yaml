@@ -1,0 +1,22 @@
+policy_name: "db_shadowing_example"
+rules:
+  - rule_id: "R1"
+    action: "ALLOW"
+    protocol: "TCP"
+    src_cidr: "10.0.0.0/8"
+    dst_cidr: "ANY"
+    port_range: "80..8080"
+
+  - rule_id: "R2"
+    action: "DENY"
+    protocol: "TCP"
+    src_cidr: "10.0.5.0/24"
+    dst_cidr: "10.0.10.50/32"
+    port_range: "5432"
+
+  - rule_id: "R3"
+    action: "DENY"
+    protocol: "ALL"
+    src_cidr: "ANY"
+    dst_cidr: "ANY"
+    port_range: "ANY"

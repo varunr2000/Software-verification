@@ -1,0 +1,20 @@
+Software-verification/
+├── policies/
+│   └── shadowing_bug.yaml
+├── src/
+│   ├── __init__.py
+│   ├── parser/
+│   │   ├── __init__.py
+│   │   ├── intervals.py
+│   │   └── loader.py
+│   ├── encoder/
+│   │   ├── __init__.py
+│   │   └── z3_encoder.py
+│   └── verifier/
+│       ├── __init__.py
+│       └── checker.py
+├── tests/
+│   ├── __init__.py
+│   └── test_parser.py
+├── main.py
+└── requirements.txt
